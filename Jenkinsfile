@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         // Definir as credenciais do Git como uma variável de ambiente
-        GIT_CREDENTIALS_ID = 'duducosmos'
+        GIT_CREDENTIALS_ID = 'brunoadsba'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
                 // Clonar o repositório Git da branch 'main'
-                git branch: 'main', credentialsId: "${GIT_CREDENTIALS_ID}", url: 'https://github.com/duducosmos/devopsaula23.git'
+                git branch: 'main', credentialsId: "${GIT_CREDENTIALS_ID}", url: 'https://github.com/brunoadsba/devops_aula_24.git'
             }
         }
 
