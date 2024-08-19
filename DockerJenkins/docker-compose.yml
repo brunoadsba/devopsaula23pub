@@ -3,7 +3,7 @@ services:
     build: .
     user: root
     ports:
-      - "8087:8080"
+      - "8080:8080"
       - "50000:50000"
     volumes:
       - jenkins:/var/jenkins_home
